@@ -1,0 +1,22 @@
+version: "3.5"
+
+services:
+    web-example:
+        build:
+            context: .
+        expose:
+            - 5000
+        volumes:
+            - .:/app:ro
+        command: /usr/local/bin/gunicorn -k gevent --reload --workers 10 --worker-connections 10 --access-logfile=- --pythonpath /app -b :5000 app:app
+
+    nginx:
+        restart: always
+        image: nginx:latest
+        ports:
+            - "8080:8080"
+        volumes:
+            - ./static:/www/static:ro
+            - ./nginx.conf:/etc/nginx/conf.d/default.conf
+
+

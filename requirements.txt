@@ -1,0 +1,4 @@
+TTS==0.16.1
+mecab-python3==1.0.6
+unidic-lite==1.0.8
+Flask-Cors==4.0.0

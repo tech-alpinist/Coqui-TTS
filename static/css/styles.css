@@ -1,0 +1,58 @@
+#home h1 {
+  background-image: linear-gradient(89.27deg, rgb(237, 143, 28) -1.56%, rgb(70, 141, 106) 102.75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#about .features {
+  display: flex;
+  align-items: center;
+}
+
+#about .features img {
+  width: 2em;
+}
+
+.synthesize_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.synthesize_wrapper textarea {
+  width: 80%;
+  height: 5em;
+  max-height: 7.5em;
+}
+
+.synthesize_wrapper button {
+  width: 10em;
+  margin-top: 2em;
+}
+
+.synthesize_wrapper .limit {
+  display: none;
+  color: #5f0000;
+}
+
+.generating {
+  display: none;
+  margin-top: 0.5em;
+}
+
+.result {
+  display: none;
+  margin-top: 0.5em;
+}
+
+.audio_player {
+  margin-top: 1em;
+}
+
+.bg-image-full {
+  background-size: cover;
+}
